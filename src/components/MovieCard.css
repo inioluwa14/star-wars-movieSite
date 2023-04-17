@@ -10,7 +10,8 @@ body{
 }
 .star-wars-logo{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    font-size: 5em;
 }
 
 .movie{
@@ -25,11 +26,14 @@ body{
     background-color: rgb(29, 25, 25);
     border-radius: 0.5em;
 }
-.movie-container:nth-child(1){
+.movie-container:nth-child(odd){
     background: url("https://plus.unsplash.com/premium_photo-1661284807863-89df07cde422?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
     background-blend-mode: darken;
     /* opacity: ; */
     
+}
+.movie-container:nth-child(even){
+    background:url("https://plus.unsplash.com/premium_photo-1664303113426-b3c038dbefd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG1vdmllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
 }
 .movie-container:hover{
     transition:all 0.3s ease 0s;

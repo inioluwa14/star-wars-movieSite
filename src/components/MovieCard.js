@@ -3,6 +3,7 @@ import './MovieCard.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+
 const movieData = "https://swapi.dev/api/films";
 
 const MovieCard = () => {
@@ -30,15 +31,16 @@ const MovieCard = () => {
      getMovie();
   },[])
 
-
   return (
     <div>
       <h1 className='star-wars-logo'><span>S</span>TAR WARS</h1>
+
       {loading && <div className='loading-icon'>Please wait</div>}
       {error && <div>{`There seems to be a problem fetching this data - ${error}`}</div>}
       <div className='movie'>
         {data && data.map((item) => {
           return (
+            
           <div className='movie-container' key={item.episode_id}>
             <div className='movie-title'>
               <h3 className='title'>{item.title}</h3>
