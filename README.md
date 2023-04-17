@@ -1,7 +1,12 @@
 # Star Wars Movie Website
 This project was completed using axios library to fetch the movie data from the api given, useState to set the different action and UseEffect to apply them at different places. 
 
-The site was styled very close to the sample website that was given. Have a little challenge getting the title styling.
+The site was styled very close to the sample website that was given. 
+
+## Challenges I couldn't resolve
+1. Have a little challenge getting the title styling.
+2. I couldn't change the format of the release date
+3. I tried to make the background image blur but it affected the text
 
 # Getting Started with Create React App
 
